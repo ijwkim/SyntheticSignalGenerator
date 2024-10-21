@@ -87,3 +87,8 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+Run the script:
+```bash
+python signal_generator.py
+```

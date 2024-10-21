@@ -29,6 +29,9 @@ A Python tool for generating synthetic magnetic field (`B`) signals and their ra
    cd MagneticSensorFusionTestSignal
    ```
 
+### Usage
+Import the `generate_test_signals` function from `signal_generator.py` to create synthetic signals. You can also visualize the signals by using the `plot_signals` function.
+
 ```python
 from signal_generator import generate_test_signals, plot_signals
 

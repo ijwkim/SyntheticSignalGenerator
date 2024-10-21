@@ -63,3 +63,27 @@ The `generate_test_signals` function initializes and returns a dictionary of syn
 
 ### Example
 Here is an example script demonstrating how to generate and plot the synthetic signals:
+
+```python
+from signal_generator import generate_test_signals, plot_signals
+
+def main():
+    # Generate synthetic test signals
+    signals = generate_test_signals()
+    
+    # Extract signals from the returned dictionary
+    t = signals['t']
+    b_true = signals['b_true']
+    b_meas = signals['b_meas']
+    dBdt_true = signals['dBdt_true']
+    dBdt_meas = signals['dBdt_meas']
+    offset = signals['offset']
+    measured_sigma = signals['measured_sigma']
+    diff_measured_sigma = signals['diff_measured_sigma']
+    
+    # Plot the signals
+    plot_signals(t, b_true, b_meas, dBdt_true, dBdt_meas, offset, measured_sigma, diff_measured_sigma)
+
+if __name__ == "__main__":
+    main()
+```

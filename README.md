@@ -27,9 +27,9 @@ A Python tool for generating synthetic magnetic field (`B`) signals and their ra
    ```bash
    git clone https://github.com/yourusername/MagneticSensorFusionTestSignal.git
    cd MagneticSensorFusionTestSignal
-   '''
+   ```
 
-'''python
+```python
 from signal_generator import generate_test_signals, plot_signals
 
 # Generate synthetic test signals
@@ -47,5 +47,5 @@ diff_measured_sigma = signals['diff_measured_sigma']       # Noise standard devi
 
 # Plot the generated signals
 plot_signals(t, b_true, b_meas, dBdt_true, dBdt_meas, offset, measured_sigma, diff_measured_sigma)
-'''
+```
 

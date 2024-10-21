@@ -25,7 +25,7 @@ A Python tool for generating synthetic magnetic field (`B`) signals and their ra
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/MagneticSensorFusionTestSignal.git
+   git clone https://github.com/ijwkim/MagneticSensorFusionTestSignal.git
    cd MagneticSensorFusionTestSignal
    ```
 
@@ -52,3 +52,14 @@ diff_measured_sigma = signals['diff_measured_sigma']       # Noise standard devi
 plot_signals(t, b_true, b_meas, dBdt_true, dBdt_meas, offset, measured_sigma, diff_measured_sigma)
 ```
 
+### Parameters
+The `generate_test_signals` function initializes and returns a dictionary of synthetic signals with the following default parameters:
+
+`sampling_freq` (float): Sampling frequency in Hz. Default: 1000 Hz
+`duration_hours` (int): Duration of the signal in hours. Default: 1 hour
+`measured_sigma` (float): Standard deviation of noise added to the magnetic field (B). Default: 0.1 T
+`diff_measured_sigma` (float): Standard deviation of noise added to the rate of change of the magnetic field (dB/dt). Default: 0.02 T/s
+These parameters can be adjusted within the `generate_test_signals` function as needed.
+
+### Example
+Here is an example script demonstrating how to generate and plot the synthetic signals:
